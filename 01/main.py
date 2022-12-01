@@ -11,6 +11,8 @@ with open('./01/input.txt', 'r') as f:
 
 calory_sums.sort()
 calory_sums.reverse()
+top_calories = calory_sums[0]
 top_three = calory_sums[0:3]
 top_three_sum = sum(top_three)
+print(f"Top Calories of one Elv: {top_calories}")
 print(f"Sum: {top_three_sum}")
