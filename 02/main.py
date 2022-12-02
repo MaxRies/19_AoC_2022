@@ -35,7 +35,6 @@ def reward_function(game_str: str) -> int:
 
     return score
 
-games = strategy_guide.split('\n')
 scores = [reward_function(game_str) for game_str in strategy_guide]
 total_score = sum(scores)
 print(f"Total score: {total_score}")
