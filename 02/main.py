@@ -41,7 +41,7 @@ print(f"Total score for Part 1: {total_score}")
 
 LUT_outcome = {
     'X': 0,
-    'Y': 1,
+    'Y': 3,
     'Z': 6
 }
 
