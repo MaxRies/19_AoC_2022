@@ -24,7 +24,7 @@ LUT_RPS = {
 }
 
 def reward_function(game_str: str) -> int:
-    opponent, player = game_str.split(" ").replace("\n", "")
+    opponent, player = game_str.replace("\n", "").split(" ")
     opponent_play = LUT_RPS[opponent]
     player_play = LUT_RPS[player]
 
