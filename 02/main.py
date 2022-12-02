@@ -50,8 +50,8 @@ def find_player_shape_score(opponent, outcome) -> int:
     desired_outcome = LUT_outcome[outcome]
 
     player_shape_idx = outcome_matrix[opponent_play].index(desired_outcome)  #CPU cycles are cheap, my time is not
-    shape_reward = shape_reward[player_shape_idx]
-    return shape_reward
+    shape_bonus = shape_reward[player_shape_idx]
+    return shape_bonus
 
 
 def reward_function_2(game_str: str) -> int:
