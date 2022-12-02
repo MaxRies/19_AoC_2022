@@ -1,7 +1,7 @@
 with open('./02/input.txt', 'r') as f:
     strategy_guide = f.readlines()
 
-# Opponent Move: Row, Player Move: Column
+# Opponent Move: Column, Player Move: Row
 #       Rock Paper Scissor
 # Rock    3    0      6
 # Paper   6    3      0
@@ -28,7 +28,7 @@ def reward_function(game_str: str) -> int:
     opponent_play = LUT_RPS[opponent]
     player_play = LUT_RPS[player]
 
-    outcome = outcome_matrix[opponent_play][player_play]
+    outcome = outcome_matrix[player_play][opponent_play]
     shape_bonus = shape_reward[player_play]
 
     score = outcome + shape_bonus
